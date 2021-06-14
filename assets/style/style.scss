@@ -1,45 +1,81 @@
 @import "var";
 @import "resposive";
 
-*{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 2000px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-a{
-    text-decoration: none;
-    color: $txt-color;
-    transition: 0.2s all;
-    -webkit-transition: 0.2s all;
-    -moz-transition: 0.2s all;
-    -ms-transition: 0.2s all;
-    -o-transition: 0.2s all;
+a {
+  text-decoration: none;
+  color: $txt-color;
+  transition: 0.2s all;
+  -webkit-transition: 0.2s all;
+  -moz-transition: 0.2s all;
+  -ms-transition: 0.2s all;
+  -o-transition: 0.2s all;
 }
-a:hover{
+a:hover {
+  color: $btn-bg;
+}
+header {
+  h1 {
+    text-align: center;
     color: $btn-bg;
-}
-header{
-    h1{
-        text-align: center;
-        color: $btn-bg;
-        font: {
-            family: cursive;
-            weight: 900;
-            background-color: $bg;
-        }
+    background-color: $bg;
+    font: {
+      family: cursive;
+      weight: 900;
     }
+  }
 }
-nav{
-   .nav-item{
+nav {
+  position: sticky;
+  top: 0;
+  .nav-item {
     border: 1px solid $brder;
-       .nav-link{
-           display: inline-block;
-           padding: 10px;
-           border-right: 1px solid $brder;
-       }
-   }
+    .nav-link {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 10px;
+        border-right: 1px solid $brder;
+      }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: $bg;
+          border: 1px solid $brder;
+          border-top: none;
+          z-index: 1;
+          width: fit-content;
+          margin-left: -5px;
+        }
+    
+        .dropdown-content a {
+          color: $txt-color;
+          padding: 10px;
+          text-decoration: none;
+          display: block;
+          border: none;
+          &:hover{
+            color: $btn-bg;
+          }
+        }
+    
+        &:hover .dropdown-content {
+          display: block;
+        }
+      }
+  }
 }
