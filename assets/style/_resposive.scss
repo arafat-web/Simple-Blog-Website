@@ -1,5 +1,5 @@
 .row::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -21,4 +21,17 @@
 .col-65 {
   float: left;
   width: 65%;
+}
+.col-3 {
+  float: left;
+  width: 33.3333%;
+}
+@media (max-width: 800px) {
+  .col-3,
+  .col-35,
+  .col-40,
+  .col-60,
+  .col-65 {
+    width: 100%;
+  }
 }
