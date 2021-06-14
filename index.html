@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
+
 <body>
-    
+
     <header>
         <h1>
             Blog.com
@@ -31,7 +33,7 @@
                     <a href="#">Symbian</a>
                     <a href="#">Android</a>
                     <a href="#">iPhone</a>
-                  </div>
+                </div>
             </div>
             <div class="nav-link dropdown">
                 <a href="#">Computer <i class="fa fa-caret-down"></i></a>
@@ -39,7 +41,7 @@
                     <a href="#">Windows</a>
                     <a href="#">Linux</a>
                     <a href="#">Mac</a>
-                  </div>
+                </div>
             </div>
             <div class="nav-link">
                 <a href="#">Programming</a>
@@ -61,12 +63,12 @@
                 <div class="toggle">
                     <button class="btn menu-btn" onclick="myNav()">
                         <i class="fa fa-bars"></i>
-                      </button>
+                    </button>
                 </div>
 
-                 <div class="menu-header">
-                     Blog.com
-                 </div>
+                <div class="menu-header">
+                    Blog.com
+                </div>
             </div>
             <div class="nav-item" id="res-menu">
                 <div class="nav-link">
@@ -82,7 +84,7 @@
                         <a href="#">Symbian</a>
                         <a href="#">Android</a>
                         <a href="#">iPhone</a>
-                      </div>
+                    </div>
                 </div>
                 <div class="nav-link dropdown">
                     <a href="#">Computer <i class="fa fa-caret-down"></i></a>
@@ -90,7 +92,7 @@
                         <a href="#">Windows</a>
                         <a href="#">Linux</a>
                         <a href="#">Mac</a>
-                      </div>
+                    </div>
                 </div>
                 <div class="nav-link">
                     <a href="#">Programming</a>
@@ -108,16 +110,40 @@
 
         </div>
     </nav>
+
+    <div class="blog">
+        <!-- LEFT SIDE BAR START  -->
+        <div class="row">
+            <!-- BLOG BODY  -->
+            <div class="col-70">
+                <div class="blog-body">
+                    <div class="row">
+                        <!-- BLOG IMG  -->
+                        <div class="col-40">
+                            <div class="blog-img">
+
+                            </div>
+                        </div>
+                        <!-- BLOG IMG END  -->
+                    </div>
+                </div>
+            </div>
+            <!-- BLOG BODY END  -->
+        </div>
+        <!-- LEFT SIDE BAR END  -->
+    </div>
+
     <script>
         function myNav() {
-          var nav = document.getElementById("res-menu");
-  
-          if (nav.style.display == "none") {
-            nav.style.display = "block";
-          } else {
-            nav.style.display = "none";
-          }
+            var nav = document.getElementById("res-menu");
+
+            if (nav.style.display == "none") {
+                nav.style.display = "block";
+            } else {
+                nav.style.display = "none";
+            }
         }
-      </script>
+    </script>
 </body>
+
 </html>

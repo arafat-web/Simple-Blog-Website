@@ -31,17 +31,47 @@ row::after {
 
 .col-6 {
   float: left;
-  width: 100%;
+  width: 16.66666666666667%;
 }
 
 .col-7 {
   float: left;
-  width: 16.66666666666667%;
+  width: 14.28571428571429%;
 }
 
 .col-8 {
   float: left;
   width: 12.5%;
+}
+
+.col-9 {
+  float: left;
+  width: 11.1111%;
+}
+
+.col-10 {
+  float: left;
+  width: 10%;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
 }
 
 @media (max-width: 800px) {
@@ -52,7 +82,9 @@ row::after {
   .col-5,
   .col-6,
   .col-7,
-  .col-8 {
+  .col-8,
+  .col-9,
+  .col-10 {
     width: 100%;
   }
 }
