@@ -1,62 +1,7 @@
-row::after {
-  content: "";
+.row::after {
+  content: '';
   display: table;
   clear: both;
-}
-
-.col-1 {
-  float: left;
-  width: 100%;
-}
-
-.col-2 {
-  float: left;
-  width: 50%;
-}
-
-.col-3 {
-  float: left;
-  width: 33.33333333333333%;
-}
-
-.col-4 {
-  float: left;
-  width: 25%;
-}
-
-.col-5 {
-  float: left;
-  width: 20%;
-}
-
-.col-6 {
-  float: left;
-  width: 16.66666666666667%;
-}
-
-.col-7 {
-  float: left;
-  width: 14.28571428571429%;
-}
-
-.col-8 {
-  float: left;
-  width: 12.5%;
-}
-
-.col-9 {
-  float: left;
-  width: 11.1111%;
-}
-
-.col-10 {
-  float: left;
-  width: 10%;
-}
-
-.col-30 {
-  float: left;
-  width: 30%;
 }
 
 .col-40 {
@@ -69,24 +14,14 @@ row::after {
   width: 60%;
 }
 
-.col-70 {
+.col-35 {
   float: left;
-  width: 70%;
+  width: 35%;
 }
 
-@media (max-width: 800px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10 {
-    width: 100%;
-  }
+.col-65 {
+  float: left;
+  width: 65%;
 }
 
 * {
@@ -97,6 +32,7 @@ row::after {
 
 body {
   margin: 0 auto;
+  background-color: #f6f6f6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -127,14 +63,15 @@ a:hover {
 }
 
 header {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 header h1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
   color: #f80909;
-  background-color: #ffffff;
   font-family: cursive;
   font-weight: 900;
 }
@@ -237,5 +174,128 @@ nav .mobile-menu .nav-link {
   nav .mobile-menu {
     display: block;
   }
+}
+
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.card .card-body {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card .card-body .card-img {
+  padding: 10px;
+}
+
+.card .card-body .card-img img {
+  width: 100%;
+  height: 250px;
+}
+
+.card .card-body .card-post {
+  padding: 10px;
+}
+
+.card .card-body .card-post .post-cat {
+  display: inline-block;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #f80909;
+  color: #ffffff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.card .card-body .card-post .post-title {
+  padding-top: 10px;
+}
+
+.card .card-body .card-post .post-title a {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 500;
+  color: #000000;
+}
+
+.card .card-body .card-post .post-title a:hover {
+  color: #f80909;
+}
+
+.card .card-body .card-post .post-info {
+  color: #555555;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+
+.card .card-body .card-post .post-info a {
+  padding: 2px;
+  padding-right: 10px;
+}
+
+.card .card-body .card-post .post-content {
+  padding: 10px 0px;
+  color: #555555;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.card .card-body .card-post .post-btn {
+  background-color: #f80909;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.card .card-body .card-post .post-btn:hover {
+  opacity: 0.7;
+}
+
+.card .sidebar {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.card .sidebar .side-header {
+  padding: 10px 0px;
+  border-bottom: 2px solid #f80909;
+}
+
+.card .sidebar .side-body {
+  padding: 10px 0px;
+}
+
+.card .sidebar .side-body .side-img {
+  padding: 0px 10px;
+}
+
+.card .sidebar .side-body .side-img img {
+  width: 100%;
+  height: 120px;
+}
+
+.card .sidebar .side-title a {
+  line-height: 24px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.card .sidebar .side-title a:hover {
+  color: #f80909;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@
 }
 body {
   margin: 0 auto;
+  background-color: $main-bg;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -32,19 +33,23 @@ a:hover {
 .btn:hover {
   color: $btn-bg;
 }
+// HEADER START
 header {
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: $bg;
   h1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
     color: $btn-bg;
-    background-color: $bg;
     font: {
       family: cursive;
       weight: 900;
     }
   }
 }
+// HEADER END
+// NAVBAR START
 nav {
   position: sticky;
   top: 0;
@@ -132,3 +137,113 @@ nav {
     }
   }
 }
+// NAVBAR END
+// BLOG AREA START
+.card {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  .card-body {
+    background-color: $bg;
+    padding: 20px;
+    margin: 20px;
+    .card-img {
+      padding: 10px;
+      img {
+        width: 100%;
+        height: 250px;
+      }
+    }
+    .card-post {
+      padding: 10px;
+      .post-cat {
+        display: inline-block;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 12px;
+        background-color: $btn-bg;
+        color: $bg;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+      .post-title {
+        padding-top: 10px;
+        a {
+          font-size: 20px;
+          line-height: 30px;
+          text-align: left;
+          font-weight: 500;
+          color: $title-txt;
+          &:hover {
+            color: $btn-bg;
+          }
+        }
+      }
+      .post-info {
+        color: $txt-color;
+        font-size: 12px;
+        padding: 5px 0px;
+        a {
+          padding: 2px;
+          padding-right: 10px;
+        }
+      }
+      .post-content {
+        padding: 10px 0px;
+        color: $txt-color;
+        line-height: 24px;
+        text-align: justify;
+      }
+      .post-btn {
+        background-color: $btn-bg;
+        display: inline-block;
+        color: $bg;
+        font-size: 15px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .sidebar{
+    padding: 20px;
+    background-color: $bg;
+    .side-header{
+      padding: 10px 0px;
+      border-bottom: 2px solid $btn-bg;
+      
+    }
+    .side-body{
+      padding: 10px 0px;
+      .side-img{
+        padding: 0px 10px;
+        img{
+          width: 100%;
+          height: 120px;
+        }
+      }
+    }
+    .side-title{
+      a{
+        line-height: 24px;
+        font-size: 18px;
+        color: $title-txt;
+        font-weight: bold;
+        &:hover{
+          color: $btn-bg;
+        }
+      }
+    }
+  }
+}
+
+
+// BLOG AREA END

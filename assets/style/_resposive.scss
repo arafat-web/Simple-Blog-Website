@@ -1,76 +1,24 @@
-//Resposive Design
-row::after {
-  content: "";
+.row::after {
+  content: '';
   display: table;
   clear: both;
 }
-.col-1 {
-  float: left;
-  width: 100%;
-}
-.col-2 {
-  float: left;
-  width: 50%;
-}
-.col-3 {
-  float: left;
-  width: 33.33333333333333%;
-}
-.col-4 {
-  float: left;
-  width: 25%;
-}
-.col-5 {
-  float: left;
-  width: 20%;
-}
-.col-6 {
-  float: left;
-  width: 16.66666666666667%;
-}
-.col-7 {
-  float: left;
-  width: 14.28571428571429%;
-}
-.col-8 {
-  float: left;
-  width: 12.5%;
-}
-.col-9 {
-  float: left;
-  width: 11.1111%;
-}
-.col-10 {
-  float: left;
-  width: 10%;
-}
-.col-30{
-  float: left;
-  width: 30%;
-}
-.col-40{
+
+.col-40 {
   float: left;
   width: 40%;
 }
-.col-60{
+
+.col-60 {
   float: left;
   width: 60%;
 }
-.col-70{
+.col-35 {
   float: left;
-  width: 70%;
+  width: 35%;
 }
-@media (max-width: 800px) {
-  .col-1,
-  .col-2,
-  .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10 {
-    width: 100%;
-  }
+
+.col-65 {
+  float: left;
+  width: 65%;
 }
