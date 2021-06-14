@@ -7,7 +7,6 @@
 }
 body {
   margin: 0 auto;
-  max-width: 1200px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -34,6 +33,8 @@ a:hover {
   color: $btn-bg;
 }
 header {
+  max-width: 1200px;
+  margin: 0 auto;
   h1 {
     text-align: center;
     color: $btn-bg;
@@ -47,16 +48,21 @@ header {
 nav {
   position: sticky;
   top: 0;
+  border: 1px solid $brder;
   background-color: $bg;
   .nav-item {
+    max-width: 1200px;
+    margin: 0 auto;
     display: block;
-    border: 1px solid $brder;
     .nav-link {
       display: inline-block;
       a {
         display: block;
         padding: 10px;
         border-right: 1px solid $brder;
+      }
+      &:nth-child(1) {
+        border-left: 1px solid $brder;
       }
     }
     .dropdown {
@@ -108,22 +114,21 @@ nav {
         }
       }
     }
-    .nav-link{
+    .nav-link {
       display: block;
     }
   }
 }
-@media(max-width: 800px){
-  header{
+@media (max-width: 800px) {
+  header {
     display: none;
   }
-  nav{
-    .nav-item{
+  nav {
+    .nav-item {
       display: none;
     }
-    .mobile-menu{
+    .mobile-menu {
       display: block;
     }
   }
-
 }
