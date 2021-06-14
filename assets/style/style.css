@@ -1,16 +1,5 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 row::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -53,5 +42,29 @@ row::after {
 .col-8 {
   float: left;
   width: 12.5%;
+}
+
+@media (max-width: 800px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8 {
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 /*# sourceMappingURL=style.css.map */
