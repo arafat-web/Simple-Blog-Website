@@ -66,7 +66,6 @@ row::after {
 body {
   margin: 0 auto;
   max-width: 1200px;
-  height: 2000px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -84,6 +83,18 @@ a:hover {
   color: #f80909;
 }
 
+.btn {
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #f80909;
+}
+
 header h1 {
   text-align: center;
   color: #f80909;
@@ -96,9 +107,11 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background-color: #ffffff;
 }
 
 nav .nav-item {
+  display: block;
   border: 1px solid #ecebeb;
 }
 
@@ -144,5 +157,43 @@ nav .nav-item .dropdown .dropdown-content a:hover {
 
 nav .nav-item .dropdown:hover .dropdown-content {
   display: block;
+}
+
+nav .mobile-menu {
+  display: none;
+}
+
+nav .mobile-menu .mobile-menu-bar {
+  border: 1px solid #ecebeb;
+}
+
+nav .mobile-menu .mobile-menu-bar .toggle {
+  width: 45%;
+  display: inline-block;
+}
+
+nav .mobile-menu .mobile-menu-bar .menu-header {
+  width: 40%;
+  display: inline-block;
+  color: #f80909;
+  font-size: 23px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+nav .mobile-menu .nav-link {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  header {
+    display: none;
+  }
+  nav .nav-item {
+    display: none;
+  }
+  nav .mobile-menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */

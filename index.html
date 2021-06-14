@@ -16,6 +16,7 @@
         </h1>
     </header>
     <nav>
+        <!-- DESKTOP NAV START -->
         <div class="nav-item">
             <div class="nav-link">
                 <a href="#">Home</a>
@@ -53,7 +54,70 @@
                 <a href="#">Other</a>
             </div>
         </div>
-    </nav>
+        <!-- DESKTOP NAV END  -->
+        <!-- MOBILE NAV START  -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-bar">
+                <div class="toggle">
+                    <button class="btn menu-btn" onclick="myNav()">
+                        <i class="fa fa-bars"></i>
+                      </button>
+                </div>
 
+                 <div class="menu-header">
+                     Blog.com
+                 </div>
+            </div>
+            <div class="nav-item" id="res-menu">
+                <div class="nav-link">
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Technology</a>
+                </div>
+                <div class="nav-link dropdown">
+                    <a href="#drop">Mobile <i class="fa fa-caret-down"></i></a>
+                    <div id="drop" class="dropdown-content">
+                        <a href="#">Java</a>
+                        <a href="#">Symbian</a>
+                        <a href="#">Android</a>
+                        <a href="#">iPhone</a>
+                      </div>
+                </div>
+                <div class="nav-link dropdown">
+                    <a href="#">Computer <i class="fa fa-caret-down"></i></a>
+                    <div id="drop" class="dropdown-content">
+                        <a href="#">Windows</a>
+                        <a href="#">Linux</a>
+                        <a href="#">Mac</a>
+                      </div>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Programming</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Hacking</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Games</a>
+                </div>
+                <div class="nav-link">
+                    <a href="#">Other</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <script>
+        function myNav() {
+          var nav = document.getElementById("res-menu");
+  
+          if (nav.style.display == "none") {
+            nav.style.display = "block";
+          } else {
+            nav.style.display = "none";
+          }
+        }
+      </script>
 </body>
 </html>
