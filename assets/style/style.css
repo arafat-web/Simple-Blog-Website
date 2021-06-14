@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  float: left;
+  width: 100%;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+}
+
+.col-3 {
+  float: left;
+  width: 33.33333333333333%;
+}
+
+.col-4 {
+  float: left;
+  width: 25%;
+}
+
+.col-5 {
+  float: left;
+  width: 20%;
+}
+
+.col-6 {
+  float: left;
+  width: 100%;
+}
+
+.col-7 {
+  float: left;
+  width: 16.66666666666667%;
+}
+
+.col-8 {
+  float: left;
+  width: 12.5%;
+}
+/*# sourceMappingURL=style.css.map */

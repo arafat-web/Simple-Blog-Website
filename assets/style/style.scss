@@ -1,0 +1,55 @@
+//Variables
+$main-bg: #f6f6f6;
+$bg: #FFFFFF;
+$txt-color: #555555;
+$btn-bg: rgb(248, 9, 9);
+$title-txt: #000000;
+$brder: #efefef;
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+//Resposive Design
+row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.col-1{
+    float: left;
+    width: 100%;
+}
+.col-2{
+    float: left;
+    width: 50%;
+}
+.col-3{
+    float: left;
+    width: 33.33333333333333%; 
+}
+.col-4{
+    float: left;
+    width: 25%;
+}
+.col-5{
+    float: left;
+    width: 20%;
+}
+.col-6{
+    float: left;
+    width: 100%;
+}
+.col-7{
+    float: left;
+    width: 16.66666666666667%;
+}
+.col-8{
+    float: left;
+    width: 12.5%;
+}
