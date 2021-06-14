@@ -29,6 +29,16 @@
   width: 33.3333%;
 }
 
+.col-4 {
+  float: left;
+  width: 40%;
+}
+
+.col-6 {
+  float: left;
+  width: 60%;
+}
+
 @media (max-width: 800px) {
   .col-3,
   .col-35,
@@ -36,6 +46,9 @@
   .col-60,
   .col-65 {
     width: 100%;
+  }
+  .sidebar {
+    margin: 20px;
   }
 }
 
